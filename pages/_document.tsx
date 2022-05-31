@@ -1,3 +1,4 @@
+import { Nav } from "@/components";
 import Document,{ Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps} from "next/document";
 
 class MyDocument extends Document {
@@ -9,10 +10,12 @@ class MyDocument extends Document {
     render(){
         return(
             <Html>
-                <Head/>
+                <Head>
                 <title>mibot</title>
                 <meta charSet="utf-8"></meta>
+                </Head>
                 <body>
+                    <Nav/>
                     <Main/>
                     <NextScript/>
                 </body>
